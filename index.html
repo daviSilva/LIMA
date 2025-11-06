@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Formulário de Inscrição para Workshop de Desenvolvimento Web</title>
 
 </head>
+
 <body>
     <h1>Formulário de Inscrição para Workshop de Desenvolvimento Web</h1>
 
@@ -19,100 +21,101 @@
         <fieldset>
             <legend>Informações pessoais</legend>
             <!-- Campo de texto para nome completo -->
-        <label for="nome">Nome completo:</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required  maxlength="100">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required maxlength="100">
 
-        <!-- Campo de texto para cidade -->
-        <label for="cidade">Cidade:</label>
-        <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required maxlength="60">
+            <!-- Campo de texto para cidade -->
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required maxlength="60">
 
-        <!-- Dropdown para faixa etária -->
-        <label for="idade">Faixa etária:</label>
-        <select id="idade" name="idade" required>
-            <option value="">Selecione</option>
-            <option value="menor18">Menor de 18</option>
-            <option value="18-25">18 a 25 anos</option>
-            <option value="26-35">26 a 35 anos</option>
-            <option value="36-50">36 a 50 anos</option>
-            <option value="50mais">Mais de 50 anos</option>
-        </select>
-        
+            <!-- Dropdown para faixa etária -->
+            <label for="idade">Faixa etária:</label>
+            <select id="idade" name="idade" required>
+                <option value="">Selecione</option>
+                <option value="menor18">Menor de 18</option>
+                <option value="18-25">18 a 25 anos</option>
+                <option value="26-35">26 a 35 anos</option>
+                <option value="36-50">36 a 50 anos</option>
+                <option value="50mais">Mais de 50 anos</option>
+            </select>
+
         </fieldset>
         <fieldset>
             <legend>Informações de Contato</legend>
-             <!-- Campo de email com regex para validação de formato -->
-        <label for="email">E-mail:</label>
-        <!-- 
+            <!-- Campo de email com regex para validação de formato -->
+            <label for="email">E-mail:</label>
+            <!-- 
             A regex abaixo valida formatos básicos de e-mail, garantindo presença de @ e domínio.
         -->
-        <input type="email" id="email" name="email" placeholder="digite seu melhor email!! EX: email@dominio.com"
-               required pattern="^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-               <!-- Até o "+@" é usado para garantir o começo do email antes  do @
+            <input type="email" id="email" name="email" placeholder="digite seu melhor email!! EX: email@dominio.com"
+                required pattern="^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <!-- Até o "+@" é usado para garantir o começo do email antes  do @
                     e do outro lado para colocar o domínio-->
-        <!-- Campo de telefone com regex para validar DDD + número -->
-        <label for="telefone">Telefone:</label>
-        <!-- A regex abaixo aceita formatos como (11)99999-9999 ou 11999999999.-->
-        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999"
-               required pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$">
-               <!-- "\(?\d{2}\)" separa os 2 primeiros números digitados nos parenteses-->
-             <!-- "?\s?\d{4,5}" junta os 4 a 5 números digitados após o parenteses -->
-              <!-- -"?\d{4}$" separa 4 números depois do ifem, de forma a deixar mais prático a interpretação do número de telefone  -->
+            <!-- Campo de telefone com regex para validar DDD + número -->
+            <label for="telefone">Telefone:</label>
+            <!-- A regex abaixo aceita formatos como (11)99999-9999 ou 11999999999.-->
+            <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required
+                pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$">
+            <!-- "\(?\d{2}\)" separa os 2 primeiros números digitados nos parenteses-->
+            <!-- "?\s?\d{4,5}" junta os 4 a 5 números digitados após o parenteses -->
+            <!-- -"?\d{4}$" separa 4 números depois do ifem, de forma a deixar mais prático a interpretação do número de telefone  -->
 
-        
+
 
         </fieldset>
         <fieldset>
             <legend>Documento de identidade</legend>
             <!-- Campo de upload de arquivo (documento de identidade) -->
-             <!-- Aqui ele só aceita .pdf, .jpg. ou .png-->
-        <label for="documento">Documento de Identidade (RG ou CNH):</label>
-        <input type="file" id="documento" name="documento" accept=".pdf,.jpg,.png" required>
+            <!-- Aqui ele só aceita .pdf, .jpg. ou .png-->
+            <label for="documento">Documento de Identidade (RG ou CNH):</label>
+            <input type="file" id="documento" name="documento" accept=".pdf,.jpg,.png" required>
 
         </fieldset>
-       
-        
+
+
         <fieldset>
             <legend>Áreas de interesse</legend>
 
             <!-- Dropdown para área de interesse -->
-        <label for="area">Área de interesse:</label>
-        <select id="area" name="area" required>
-            <option value="">Selecione</option>
-            <option value="frontend">Desenvolvimento Front-end</option>
-            <option value="backend">Desenvolvimento Back-end</option>
-            <option value="fullstack">Desenvolvimento Full Stack</option>
-            <option value="uxui">Design UX/UI</option>
-            <option value="devops">DevOps e Infraestrutura</option>
-        </select>
+            <label for="area">Área de interesse:</label>
+            <select id="area" name="area" required>
+                <option value="">Selecione</option>
+                <option value="frontend">Desenvolvimento Front-end</option>
+                <option value="backend">Desenvolvimento Back-end</option>
+                <option value="fullstack">Desenvolvimento Full Stack</option>
+                <option value="uxui">Design UX/UI</option>
+                <option value="devops">DevOps e Infraestrutura</option>
+            </select>
 
         </fieldset>
         <fieldset>
             <legend>Turno</legend>
             <!-- Botões de opção (radio) para turno preferencial -->
-        <label>Turno preferencial:</label>
-        <div class="radio-group">
-            <label><input type="radio" name="turno" value="manha" required> Manhã</label>
-            <label><input type="radio" name="turno" value="tarde"> Tarde</label>
-            <label><input type="radio" name="turno" value="noite"> Noite</label>
-        </div>
-        <fieldset>
-            <legend> Interesses</legend>
-             <!-- Checkboxes para tópicos de interesse -->
-        <label>Tópicos de interesse:</label>
-        <div class="checkbox-group">
-            <label><input type="checkbox" name="topicos" value="html"> HTML & CSS</label>
-            <label><input type="checkbox" name="topicos" value="javascript"> JavaScript</label>
-            <label><input type="checkbox" name="topicos" value="python"> Python</label>
-            <label><input type="checkbox" name="topicos" value="react"> React</label>
-            <label><input type="checkbox" name="topicos" value="seguranca"> Segurança Web</label>
-        </div>
-        <fieldset>
-            <legend>observações</legend>
-             <!-- Campo de texto para comentários adicionais -->
-        <label for="comentarios">Comentários adicionais:</label>
-        <textarea id="comentarios" name="comentarios" maxlength="300" placeholder="Digite observações, dúvidas ou preferências..."></textarea>
-        </fieldset>
-        </fieldset>
+            <label>Turno preferencial:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="turno" value="manha" required> Manhã</label>
+                <label><input type="radio" name="turno" value="tarde"> Tarde</label>
+                <label><input type="radio" name="turno" value="noite"> Noite</label>
+            </div>
+            <fieldset>
+                <legend> Interesses</legend>
+                <!-- Checkboxes para tópicos de interesse -->
+                <label>Tópicos de interesse:</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="topicos" value="html"> HTML & CSS</label>
+                    <label><input type="checkbox" name="topicos" value="javascript"> JavaScript</label>
+                    <label><input type="checkbox" name="topicos" value="python"> Python</label>
+                    <label><input type="checkbox" name="topicos" value="react"> React</label>
+                    <label><input type="checkbox" name="topicos" value="seguranca"> Segurança Web</label>
+                </div>
+                <fieldset>
+                    <legend>observações</legend>
+                    <!-- Campo de texto para comentários adicionais -->
+                    <label for="comentarios">Comentários adicionais:</label>
+                    <textarea id="comentarios" name="comentarios" maxlength="300"
+                        placeholder="Digite observações, dúvidas ou preferências..."></textarea>
+                </fieldset>
+            </fieldset>
         </fieldset>
         <!-- Botão de envio -->
         <button type="submit">Enviar Inscrição</button>
@@ -123,4 +126,5 @@
         e melhorando a integridade das informações. Regex ajuda a padronizar formatos
         de e-mail e telefone, evitando cadastros inválidos e possíveis falhas.-->
 </body>
+
 </html>
