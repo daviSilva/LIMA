@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef1f5;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2b3a67;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+/* Estilo para agrupamento de campos */
+fieldset {
+    border: 2px solid #2b3a67;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9fafc;
+}
+
+/* Estilo da legenda do fieldset */
+legend {
+    font-weight: bold;
+    color: #2b3a67;
+    padding: 0 10px;
+    font-size: 1.1em;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    
+    padding-top:  45px;
+}
+
+button {
+    background-color: #2b3a67;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #1d294a;
+}
